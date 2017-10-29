@@ -6,6 +6,7 @@ var Switch = ReactRouter.Switch;
 
 // Components
 var Home = require('./Home');
+var Navbar = require('./Navbar');
 
 //
 
@@ -13,10 +14,9 @@ class App extends React.Component {
 	render() {
 		return (
 				<div>
-					
+					<Navbar />
 					<Switch>
 						<Route exact path='/' component={Home} />
-						<Route exact path='/go' component={Home} />
 						
 					</Switch>
 
