@@ -9,7 +9,7 @@ class SlideItem extends React.Component {
                 <img className="rounded-circle" width="80" height="80" src={this.props.img} />
                 <h4>{this.props.name}</h4>
                 <p><small>{this.props.title}</small></p>
-                <p className="text-justify">{this.props.body.replace("\n","")}</p>
+                <p className="text-justify" dangerouslySetInnerHTML={{__html: this.props.body.replace("\n","")}} />
             </div>
         )
     }

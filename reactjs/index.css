@@ -81,4 +81,9 @@ body {
     text-align: center;
 }
 
+.green_slide a{
+	color: white !important;
+	text-decoration: underline;
+}
+
 
