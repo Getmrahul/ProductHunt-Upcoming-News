@@ -68,5 +68,17 @@ body {
 }
 
 
+/*
+	Slider Page
+*/
+
+.green_slide {
+	min-height: 381px;
+	color: white;
+	width: 100%;
+    padding: 22px;
+    background: #009688; /*#62b366;*/
+    text-align: center;
+}
 
 

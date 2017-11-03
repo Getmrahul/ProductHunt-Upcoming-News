@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   end
 
   post "/graphql", to: "graphql#execute"
+
+  get '/api/ph/comments', to: "comments#index", :via => [:options]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/*path' => 'react#index'
 end
