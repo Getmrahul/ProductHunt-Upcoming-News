@@ -74,16 +74,25 @@ body {
 
 .green_slide {
 	min-height: 381px;
-	color: white;
+	color: rgb(36, 36, 36);
 	width: 100%;
     padding: 22px;
-    background: #009688; /*#62b366;*/
+    background: #ffffff; /*#62b366;*/
     text-align: center;
 }
 
 .green_slide a{
-	color: white !important;
+	color: rgb(36, 36, 36) !important;
 	text-decoration: underline;
 }
+
+.carousel-indicators li {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+	background-color: black;
+}
+
 
 

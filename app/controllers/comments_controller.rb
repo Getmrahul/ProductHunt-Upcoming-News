@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
     end
     def index
         url = "https://api.producthunt.com/v1/posts/#{params[:pid]}"
-        response = HTTParty.get(url, headers: {"Authorization" => "Bearer #{ENV['PHTOKEN']}"})
+        response = HTTParty.get(url, headers: {"Authorization" => "Bearer #{ENV["PHTOKEN"]}"})
         comments = response["post"]["comments"]
 
         testmo = []
